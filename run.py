@@ -9,7 +9,8 @@ from torchvision import transforms as T
 import os
 
 app = Flask(__name__)
-CORS(app)
+# Configuration CORS spécifique pour le frontend déployé
+CORS(app, resources={r"/*": {"origins": ["https://glamflowai-ten.vercel.app", "http://localhost:3000"]}})
 
 # Define classes for skin type detection
 classes = {

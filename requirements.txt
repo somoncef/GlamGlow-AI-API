@@ -5,3 +5,4 @@ timm
 Pillow>=8.4.0
 numpy
 torchvision
+gunicorn>=20.1.0
